@@ -51,9 +51,9 @@ def handle_text_message(event):
         line_bot_api.reply_message(
             event.reply_token,
             [
-                TextSendMessage(text="From: " + "愛しの" + profile.display_name + "さんから、"),
-                TextSendMessage(text="Received message: " + text + "と来ましたけども"),
-                TextSendMessage(text= text + "と言われても" + text + "としかオウム返しできない運命なんです...")
+                TextSendMessage(text="愛しの" + profile.display_name + "さんから、"),
+                TextSendMessage(text="「" + text + "」" + "と来ましたけども"),
+                TextSendMessage(text="「" + text + "」" + "と言われても" + "「" + text + "」" + "としかオウム返しできない運命なんです...")
             ],
         )
     else:
